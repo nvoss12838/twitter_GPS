@@ -1,7 +1,7 @@
 load.gps <- function(filname){
   #load GPS datafile return dataframe in time sereis format
   numCols <- max(count.fields(filname))
-  df <- read.table(filename,colClasses = c(rep("integer", 2), rep("NULL", numCols-2)))
+  df <- read.table(filname)[1:2]
   return (df)
 }
 
