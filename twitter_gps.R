@@ -19,7 +19,7 @@ run.twitter <- function(ts){
 }
 #subtract points
 remove.Outliers <- function(ts,outlier){
- ts2 <-ts[ ! ts %in% outlier, ]
+ ts2 <-ts[ ! ts[1] %in% outlier[1], ]
  return (ts2)
 }
 
